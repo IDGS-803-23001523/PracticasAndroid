@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1296E6"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Datos Personales" android:textSize="20sp" android:textStyle="bold" android:layout_marginBottom="12dp"/>
+
+        <EditText android:id="@+id/etNombre" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Nombre"/>
+        <EditText android:id="@+id/etAPaterno" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Apellido Paterno"/>
+        <EditText android:id="@+id/etAMaterno" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Apellido Materno" android:layout_marginBottom="12dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fecha de nacimiento" android:textStyle="bold"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <EditText android:id="@+id/etDia" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Día" android:inputType="number"/>
+            <EditText android:id="@+id/etMes" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Mes" android:inputType="number"/>
+            <EditText android:id="@+id/etAnio" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Año" android:inputType="number"/>
+        </LinearLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sexo" android:textStyle="bold" android:layout_marginTop="12dp"/>
+        <RadioGroup android:id="@+id/rgSexo" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <RadioButton android:id="@+id/rbMasculino" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Masculino"/>
+            <RadioButton android:id="@+id/rbFemenino" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Femenino"/>
+        </RadioGroup>
+
+        <Button android:id="@+id/btnImprimir" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Imprimir" android:layout_marginTop="16dp"/>
+
+        <LinearLayout
+            android:id="@+id/layoutResultadosZodiaco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            android:layout_marginTop="24dp"
+            android:padding="10dp"
+            android:background="#F5F5F5">
+
+            <TextView android:id="@+id/tvSaludo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp" android:textStyle="bold" android:textAlignment="center"/>
+            <TextView android:id="@+id/tvEdad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="16sp" android:layout_marginTop="4dp"/>
+            <TextView android:id="@+id/tvSignoNombre" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="16sp" android:textStyle="italic" android:layout_marginTop="4dp"/>
+
+            <ImageView
+                android:id="@+id/ivSignoIcono"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="12dp"
+                android:contentDescription="Signo zodiacal"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
