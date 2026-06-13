@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B3B6F"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cinépolis"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LA CAPITAL DEL CINE"
+            android:textColor="#EBB15B"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="25dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entradas"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Nombre del comprador"
+            android:textColorHint="#A0A0A0"
+            android:textColor="#FFFFFF"
+            android:inputType="textPersonName"
+            android:backgroundTint="#FFFFFF"
+            android:layout_marginBottom="15dp"/>
+
+        <EditText
+            android:id="@+id/etCantidadCompradores"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Cantidad Compradores"
+            android:textColorHint="#A0A0A0"
+            android:textColor="#FFFFFF"
+            android:inputType="number"
+            android:backgroundTint="#FFFFFF"
+            android:layout_marginBottom="15dp"/>
+
+        <EditText
+            android:id="@+id/etCantidadBoletas"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Cantidad de Boletas"
+            android:textColorHint="#A0A0A0"
+            android:textColor="#FFFFFF"
+            android:inputType="number"
+            android:backgroundTint="#FFFFFF"
+            android:layout_marginBottom="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tarjeta Cineco:"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginEnd="15dp"/>
+
+            <RadioGroup
+                android:id="@+id/rgTarjetaCineco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rbCinecoSi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sí"
+                    android:textColor="#FFFFFF"
+                    android:buttonTint="#FFFFFF"
+                    android:layout_marginEnd="15dp"/>
+                <RadioButton
+                    android:id="@+id/rbCinecoNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#FFFFFF"
+                    android:buttonTint="#FFFFFF"
+                    android:checked="true"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="25dp">
+
+            <Button
+                android:id="@+id/btnProcesar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Procesar"
+                android:backgroundTint="#EBB15B"
+                android:textColor="#1B3B6F"
+                android:layout_marginEnd="20dp"/>
+
+            <Button
+                android:id="@+id/btnSalir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salir"
+                android:backgroundTint="#A0A0A0"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#264D88"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salidas"
+                android:textColor="#EBB15B"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/tvValorAPagar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valor a Pagar: $0.00"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

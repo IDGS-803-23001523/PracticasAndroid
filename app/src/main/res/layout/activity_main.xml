@@ -32,5 +32,19 @@
         android:id="@+id/btnPractica3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Práctica 3: Datos Personales y Zodiaco"/>
+        android:text="Práctica 3: Datos Personales y Zodiaco"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:id="@+id/btnPractica4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Práctica 4: Valor de resistencias"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:id="@+id/btnPractica5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Práctica 5: Cinepolis"/>
 </LinearLayout>

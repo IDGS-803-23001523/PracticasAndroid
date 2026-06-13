@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#87C4E6"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#99CC00"
+            android:padding="12dp"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#99CC00"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calcular Valor de resistencias"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivTablaResistencia"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/tabla_resistencia"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="Tabla de valores de resistencias" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <Spinner
+                android:id="@+id/spinnerBanda1"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@android:drawable/btn_dropdown" />
+
+            <View
+                android:id="@+id/viewColor1"
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="20dp"
+                android:background="#FF0000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <Spinner
+                android:id="@+id/spinnerBanda2"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@android:drawable/btn_dropdown" />
+
+            <View
+                android:id="@+id/viewColor2"
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="20dp"
+                android:background="#FF0000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <Spinner
+                android:id="@+id/spinnerMultiplicador"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@android:drawable/btn_dropdown" />
+
+            <View
+                android:id="@+id/viewColor3"
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="20dp"
+                android:background="#A0522D" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp"
+            android:paddingStart="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tolerancia"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="4dp"/>
+
+                <RadioGroup
+                    android:id="@+id/rgTolerancia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rbOro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="oro"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:checked="true" />
+                    <RadioButton
+                        android:id="@+id/rbPlata"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="plata"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewTolerancia"
+                android:layout_width="85dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="10dp"
+                android:background="#FFCC00" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="calcular"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:backgroundTint="#99CC00"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp">
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="valor ohm"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/tvValorOhm"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="220"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:gravity="end" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp">
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="valor maximo"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/tvValorMaximo"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="231"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:gravity="end" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="valor minimo"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/tvValorMinimo"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="209"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:gravity="end" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

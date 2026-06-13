@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Practicas"
         tools:targetApi="31">
         <activity
+            android:name=".Practica5.CinepolisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Practica4.ValorResistenciaActivity"
+            android:exported="false" />
+        <activity
             android:name=".Practica3.SignoZodiacalActivity"
             android:exported="false" />
         <activity
